@@ -61,19 +61,19 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
     property_get("ro.bootloader", bootloader);
 
-    if (strstr(bootloader, "N910G")) {
-        /* trltedt These values are taken from trltexx and edited for the 910G FIXME */
-        property_set("ro.build.fingerprint", "samsung/trltedt/trlte:6.0.1/MHC19J/N910GDTU1COL3:user/release-keys");
-        property_set("ro.build.description", "trltedt-user 6.0.1 MHC19J N910GDTU1COL3 release-keys");
-        property_set("ro.product.model", "SM-N910G");
-        property_set("ro.product.device", "trltedt");
+    if (strstr(bootloader, "N915G")) {
+        /* tbltedt These values are taken from tbltexx and edited for the 915G FIXME */
+        property_set("ro.build.fingerprint", "samsung/tbltedt/tblte:6.0.1/MMB29M/N915GXXU1DPD1:user/release-keys");
+        property_set("ro.build.description", "tbltedt-user 6.0.1 MMB29M N915GXXU1DPD1 release-keys");
+        property_set("ro.product.model", "SM-N915G");
+        property_set("ro.product.device", "tblte");
         gsm_properties();
     } else {
-        /* trltexx */
-        property_set("ro.build.fingerprint", "samsung/trltexx/trltexx:6.0.1/MHC19J/N910FXXU1COL2:user/release-keys");
-        property_set("ro.build.description", "trltexx-user 6.0.1 MHC19J N910FXXU1COL2 release-keys");
-        property_set("ro.product.model", "SM-N910F");
-        property_set("ro.product.device", "trltexx");
+        /* tbltexx */
+        property_set("ro.build.fingerprint", "samsung/tbltexx/tbltexx:6.0.1/MMB29M/N915GXXU1DPD1:user/release-keys");
+        property_set("ro.build.description", "tbltexx-user 6.0.1 MMB29M N915GXXU1DPD1 release-keys");
+        property_set("ro.product.model", "SM-N915F");
+        property_set("ro.product.device", "tbltexx");
         gsm_properties();
     }
 
